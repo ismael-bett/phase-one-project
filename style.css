@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+button{
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(35, 37, 54);
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    margin-left: 3em;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-items{
+    margin-right: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-btn{
+    padding: 10px 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(35, 37, 54);
+    
+}
+
+.main-section {
+    background: 
+        linear-gradient(90deg,black, rgba(76, 76, 76,0.7)),
+        url(./assets/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+    position: relative;
+    color: white;
+}
+
+.main-sec-content{
+    max-width: 600px;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main-cont-head{
+    font-weight: bold;
+    font-size: 2.7em;
+}
+
+.post-ttl{
+    letter-spacing: 3px;
+}
+
+.read-more-btn{
+    width: 35%;
+    padding: 15px 0px;
+    background-color: rgb(255, 208, 80);
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(35, 37, 54);
+    
+    transition: 0.2s ease-in-out;
+}
+
+.read-more-btn:hover{
+    background-color: rgb(237, 193, 74);
+}
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    /* flex-wrap: wrap; */
+    margin-top: 3em;
+}
+
+@media screen and (max-width: 1120px) {
+    .posts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.featured-post{
+    max-width: 650px;
+    margin-left: 5em;
+}
+
+.all-posts{
+    margin-right: 5em;
+    min-width: 450px;
+}
+
+.featured-post-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border: solid 1px rgb(244, 240, 248);
+    padding: 30px;
+}
+
+.all-posts-ttl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all-posts-ttl a{
+    text-decoration: none;
+    color: rgb(89, 46, 169);
+}
+
+.post-auth-ttl{
+    font-size: 14px;
+    color: rgb(109, 110, 118);
+}
+
+.all-posts-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.posted-items-cont{
+    padding: 20px ;
+}
+
+#hoveredItem{
+    background-color: rgb(251, 246, 234);
+
+}
+
+.posted-items{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about-section{
+    margin-top: 6em;
+}
+
+.abt-design div{
+    height: 17px;
+}
+
+.abt-design{
+    display: flex;
+    flex-direction: row;
+}
+
+.des-white{
+    width: 20%;
+    margin-left: 5em;
+}
+
+.des-orange{
+    width: 60%;
+    background-color: rgb(237, 193, 74);
+}
+
+.des-purple{
+    width: 20%;
+    background-color: rgb(89, 46, 169);
+    margin-right: 5em;
+}
+
+.abt-content{
+    background-color: rgb(240, 244, 248);
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.abt-content div{
+    max-width: 500px;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.abt-ttl{
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: rgb(35, 37, 54);
+}
+
+.abt-header{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+}
+
+.our-mission{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+.msn-ttl{
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: rgb(35, 37, 54);
+}
+
+.msn-header{
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+    font-size: 1.4em;
+}
+
+.category-section{
+    margin-top: 5em;
+}
+
+.cat-ttl{
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(35, 37, 54);
+    text-align: center;
+}
+
+.cat-options{
+    margin-left: 5em;
+    margin-right: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+
+.cat-options > div{
+    height: 150px;
+    max-width: 200px;
+    border: solid 1px rgb(203, 208, 212);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.opt-icon{
+    background-color: rgb(251, 246, 234);
+    width: 45px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.opt-ttl{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(35, 37, 54);
+}
+
+.opt-cont{
+    color: rgb(109, 110, 118);
+}
+
+.startup{
+    background-color: rgb(255, 208, 80);
+}
+
+.opt-icon-startup{
+    background-color: white;
+    width: 45px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.story-section{
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.story-img{
+    background:
+        url(./assets/close-up-photography-of-man-wearing-sunglasses-1212984.png);
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* position: relative; */
+    height: 100vh;
+}
+
+.story-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.story-sec-cont{
+    height: 400px;
+    max-width: 600px;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.str-ttl{
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: rgb(35, 37, 54);
+}
+
+.str-header{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: rgb(35, 37, 54);
+}
+
+.str-cont{
+    color: rgb(109, 110, 118);
+}
+
+.authors-section{
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.auth-ttl{
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(35, 37, 54);
+    text-align: center;
+}
+
+.auth-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.auth-cont > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.auth-box-hovered{
+    background-color: rgb(251, 246, 234);
+}
+
+.auth-box{
+    background-color: rgb(240, 244, 248);
+}
+
+.auth-cont > div{
+    height: 300px;
+    width: 250px;
+    margin-top: 20px;
+    gap: 1em;
+}
+
+.auth-ttl{
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+    font-size: 1.4em;
+}
+
+.auth-tag{
+    color: rgb(109, 110, 118);
+    font-size: 14px;
+}
+
+.auth-social{
+    color: rgb(109, 110, 118);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.featured-section{
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.ftr-ttl{
+    display: flex;
+    flex-direction: column;
+}
+
+.ttl-thn{
+    color: rgb(109, 110, 118);
+    font-size: 14px;
+}
+
+.ttl-bld{
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+    font-size: 1.4em;
+}
+
+.ftr-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testtimonials-section{
+    margin-top: 6em;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: rgb(251, 246, 234);
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testtimonials-section > div{
+    width: 400px;
+}
+
+.land-test{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.test-ttl{
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: rgb(35, 37, 54);
+}
+
+.test-header{
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+    font-size: 2em;
+}
+
+.test-cont{
+    color: rgb(109, 110, 118);
+    font-size: 14px;
+}
+
+.user-test{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.user-cont{
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+    font-size: 1.4em;
+}
+
+.user-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-id{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.user-name{
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+    font-size: 1.4em;
+}
+
+.test-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.arrow-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.arrow-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 37, 54);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.join-team{
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-header{
+    font-weight: bold;
+    color: rgb(35, 37, 54);
+    font-size: 2em;
+}
+
+.join-cont{
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.join-content{
+    color: rgb(109, 110, 118);
+    font-size: 14px;
+}
+
+
+footer{
+    background-color: rgb(35, 37, 54);
+    margin-top: 6em;
+}
+
+.footer-logo{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-section{
+    padding-top: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-nav-items{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.footer-nav-items a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-sub-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 54, 73);
+    padding: 50px;
+    margin-top: 3em;
+    min-height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-sub-cont {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+.footer-sub-cont > div{
+    max-width: 600px;
+}
+.sub-content{
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+}
+
+.sub-input{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-input {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .input-email{
+        height: 50px;
+    }
+}
+
+.input-email{
+    width: 400px;
+    text-align: center;
+    background-color: rgb(52, 54, 73);
+    border: solid 2px rgb(109, 110, 118);
+    color: white;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+    padding-bottom: 5em;
+    flex-wrap: wrap;
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    color: rgb(109, 110, 118);
+}
